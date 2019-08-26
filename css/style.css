@@ -1,0 +1,120 @@
+@font-face{
+	src: url(../fonts/roboto.woff);
+	font-family: roboto;
+}
+
+@font-face{
+	src: url(../fonts/robotobold.woff);
+	font-family: roboto-bold;
+}
+
+body{
+	font-family: roboto, Arial, sans-serif;
+	margin: 0;
+	color: black;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align:left;
+	background-color: #ffffff;
+	min-width:1250px;
+}
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden 
+{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container{
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.header-logo{
+	margin-top: 49px;
+}
+.header-logo img:hover{
+	opacity: 0.8;
+}
+.header-logo:focus{
+	opacity:0.3;
+}
+.main-header{
+background-color: #eee;
+}
+.main-navigation{
+	display: flex;
+	flex-direction: row;
+}
+.site-navigation{
+	display: flex;
+	flex-direction: row;
+	margin-top: 83px;
+	
+}
+.site-navigation li{
+	margin-left: 47px;
+	
+}
+.site-navigation a{
+	color: #000000;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.basket-navigaton a{
+color: #000000;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+text-transform: uppercase;
+}
+.site-navigation a:hover,
+.basket-navigaton a:hover
+{
+	color: #fb565a;
+}
+.site-navigation a:focus,
+.basket-navigaton a:focus
+{
+	color: #000000;
+	opacity: 0.3;
+}
+.basket-navigaton{
+	width: 115px;
+	margin-top: 83px;
+	margin-left: 245px;
+	text-align: right;
+}
+.basket-icon::before{
+	content: "";
+	position:absolute;
+	width: 15px;
+	height: 15px;
+	margin-left: -47px;
+    margin-top: 4px;
+	background-image: url("../img/svg/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
